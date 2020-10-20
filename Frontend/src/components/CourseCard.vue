@@ -57,6 +57,7 @@ export default {};
     height: 50px;
     text-align: left;
     transition: none;
+    font-size: 100%;
   }
   .content {
     padding: 10px;
@@ -73,6 +74,16 @@ export default {};
   background: #303030;
   .header {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.26);
+  }
+}
+@media (max-width: 700px) {
+  .CourseCard {
+    h3 {
+      font-size: 1.1em;
+    }
+    .info {
+      font-size: 1em;
+    }
   }
 }
 </style>

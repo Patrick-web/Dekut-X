@@ -12,9 +12,10 @@
         Notices
         <div class="indicator"></div>
       </div>
-      <div class="link">
+      <div id="soon" class="link">
         <span>soon</span>
-        Student portal
+        <p id="forDesktop">Student portal</p>
+        <p id="forMobile">Portal</p>
       </div>
     </div>
     <div v-if="currentCourse" class="currentCourseDiv">
@@ -149,6 +150,59 @@ export default {
     color: palevioletred;
     img {
       transform: translateX(-50%);
+    }
+  }
+}
+#soon:hover {
+  color: white;
+  cursor: default;
+}
+#forMobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1em;
+  }
+  #forMobile {
+    display: initial;
+  }
+  #forDesktop {
+    display: none;
+  }
+  .Navbar {
+    .logoArea {
+      width: 40%;
+    }
+    .activeLink {
+      .indicator {
+        height: 5px;
+      }
+    }
+  }
+  .avatar {
+    img {
+      transform: translateX(-80%);
+      width: 40%;
+      padding: 2px;
+    }
+  }
+  .links {
+    .link {
+      padding-top: 12px;
+      padding-bottom: 2px;
+      font-size: 1em;
+      justify-self: center;
+      align-self: center;
+      span {
+        font-size: 0.5em;
+        padding: 1px;
+      }
+      .indicator {
+        position: absolute;
+        bottom: 8px;
+        border-radius: 10px;
+      }
     }
   }
 }

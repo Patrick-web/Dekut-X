@@ -61,4 +61,12 @@ export default {
   row-gap: 40px;
   padding: 40px;
 }
+@media (max-width: 600px) {
+  .coursesTab {
+    grid-template-columns: 1fr;
+  }
+  .noticesTab {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

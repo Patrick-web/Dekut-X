@@ -55,6 +55,7 @@ export default {};
       transition: none;
       .iconArea {
         img {
+          max-width: 50px;
           width: 50%;
         }
       }
@@ -63,5 +64,12 @@ export default {};
 }
 .cardItem:hover {
   background: rgba(230, 230, 250, 0.068);
+}
+@media (max-width: 700px) {
+  .cardItem {
+    display: grid !important;
+    grid-template-columns: 1fr 3fr;
+    text-align: left;
+  }
 }
 </style>

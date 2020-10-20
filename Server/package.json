@@ -1,0 +1,26 @@
+{
+  "name": "dekutxserver",
+  "version": "1.0.0",
+  "description": "server to get around cors related problems",
+  "main": "cors.server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patrick-web/Dekut-X.git"
+  },
+  "keywords": [
+    "dekutx"
+  ],
+  "author": "Patrick Waweru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patrick-web/Dekut-X/issues"
+  },
+  "homepage": "https://github.com/Patrick-web/Dekut-X#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "express": "^4.17.1"
+  }
+}
