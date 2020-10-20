@@ -1,5 +1,5 @@
 <template>
-  <div class="CourseCard">
+  <router-link to="/coursePage" class="CourseCard">
     <div class="header animated">
       <div class="editOptions">
         <img src="@/assets/pen.svg" alt="" />
@@ -12,7 +12,7 @@
         <p>SARAH MURAGE</p>
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
