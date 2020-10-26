@@ -1,9 +1,7 @@
 <template>
   <div class="home">
     <img alt="DekutX logo" id="logo" src="../assets/Logo.png" />
-    <button id="formShowBt" @click="showForm = true">
-      Sign In
-    </button>
+    <button id="formShowBt" @click="showForm = true">Sign In</button>
     <div v-if="showForm" class="formWrapper">
       <form class="form">
         <div class="header animated">
@@ -14,7 +12,7 @@
           <input
             v-model="username"
             type="text"
-            placeholder="sirname.middlename.year"
+            placeholder="surname.firstname.YY"
           />
         </div>
         <div class="formGroup">
@@ -182,6 +180,7 @@ form .header {
   color: white;
   font-size: 1.4em;
   font-weight: 300;
+  padding-left: 10px;
 }
 .zii {
   background: rgb(255, 0, 119) !important;
